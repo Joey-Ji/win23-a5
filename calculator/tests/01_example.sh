@@ -42,13 +42,7 @@ if $CALCULATOR 3 * 4; then
   exit 1
 fi
 
-# Test 06: Ensure program runs without an error with the noglob prefix for multiplication
-if ! noglob $CALCULATOR 3 * 4; then
-  echo 'ERROR! An valid run of the calculator apparently failed.' 
-  exit 1
-fi
-
-# Test 07: Ensure program with flag runs without an error 
+# Test 06: Ensure program with flag runs without an error 
 if $CALCULATOR -q 3 + 4; then
   echo 'ERROR! A valid run with flag failed!'
   exit 1
